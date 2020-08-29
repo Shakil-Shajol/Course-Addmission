@@ -1,0 +1,253 @@
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\Course_Management.dll.config
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\Course_Management.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\Course_Management.pdb
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\csc.exe
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\csc.exe.config
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\csc.rsp
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\csi.exe
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\csi.exe.config
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\csi.rsp
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\Microsoft.Managed.Core.targets
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.AppContext.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.Collections.Immutable.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.Console.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.IO.Compression.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.IO.FileSystem.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.IO.Pipes.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.Reflection.Metadata.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.Security.AccessControl.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.Security.Claims.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.Security.Principal.Windows.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.ValueTuple.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.Xml.XmlDocument.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.Xml.XPath.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\vbc.exe
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\vbc.exe.config
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\vbc.rsp
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\VBCSCompiler.exe
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\roslyn\VBCSCompiler.exe.config
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\EntityFramework.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\EntityFramework.SqlServer.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\Microsoft.Web.Infrastructure.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\System.Web.Helpers.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\System.Web.Mvc.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\System.Web.Razor.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\System.Web.Webpages.Deployment.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\System.Web.Webpages.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\System.Web.Webpages.Razor.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\EntityFramework.xml
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\EntityFramework.SqlServer.xml
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\System.Web.Razor.xml
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\System.Web.Webpages.xml
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\System.Web.Webpages.Deployment.xml
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\System.Web.Webpages.Razor.xml
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\System.Web.Helpers.xml
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\System.Web.Mvc.xml
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\obj\Debug\Course_Management.csprojAssemblyReference.cache
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\obj\Debug\Course_Management.Migrations.Data.InitialCreate.resources
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\obj\Debug\Course_Management.Migrations.Data.InitialCreate1.resources
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\obj\Debug\Course_Management.Migrations.Data.InitialCreate2.resources
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\obj\Debug\Course_Management.csproj.GenerateResource.cache
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\obj\Debug\Course_Management.csproj.CopyComplete
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\obj\Debug\Course_Management.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\M08_Project_MVC\Course_Management\obj\Debug\Course_Management.pdb
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\Course_Management.dll.config
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\Course_Management.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\Course_Management.pdb
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\csc.exe
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\csc.exe.config
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\csc.rsp
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\csi.exe
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\csi.exe.config
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\csi.rsp
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\Microsoft.Managed.Core.targets
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\System.AppContext.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\System.Collections.Immutable.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\System.Console.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\System.IO.Compression.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\System.IO.FileSystem.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\System.IO.Pipes.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\System.Reflection.Metadata.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\System.Security.AccessControl.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\System.Security.Claims.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\System.Security.Principal.Windows.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\System.ValueTuple.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\System.Xml.XmlDocument.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\System.Xml.XPath.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\vbc.exe
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\vbc.exe.config
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\vbc.rsp
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\VBCSCompiler.exe
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\roslyn\VBCSCompiler.exe.config
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\EntityFramework.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\EntityFramework.SqlServer.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\Microsoft.Web.Infrastructure.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\System.Web.Helpers.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\System.Web.Mvc.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\System.Web.Razor.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\System.Web.Webpages.Deployment.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\System.Web.Webpages.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\System.Web.Webpages.Razor.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\EntityFramework.xml
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\EntityFramework.SqlServer.xml
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\System.Web.Razor.xml
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\System.Web.Webpages.xml
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\System.Web.Webpages.Deployment.xml
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\System.Web.Webpages.Razor.xml
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\System.Web.Helpers.xml
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\System.Web.Mvc.xml
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\obj\Debug\Course_Management.csprojAssemblyReference.cache
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\obj\Debug\Course_Management.Migrations.Data.InitialCreate.resources
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\obj\Debug\Course_Management.Migrations.Data.InitialCreate1.resources
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\obj\Debug\Course_Management.Migrations.Data.InitialCreate2.resources
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\obj\Debug\Course_Management.csproj.GenerateResource.cache
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\obj\Debug\Course_Management.csproj.CopyComplete
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\obj\Debug\Course_Management.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\obj\Debug\Course_Management.pdb
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\obj\Debug\Course_Management.Migrations.Security.AuthDbScript.resources
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\Newtonsoft.Json.dll
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\bin\Newtonsoft.Json.xml
+E:\DotNET\PROJECTS\MVC\New folder (2)\M08_Project_MVC\Course_Management\obj\Debug\Course_Management.Migrations.Data.InitialCreate3.resources
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\Course_Management.dll.config
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\Course_Management.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\Course_Management.pdb
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\csc.exe
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\csc.exe.config
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\csc.rsp
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\csi.exe
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\csi.exe.config
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\csi.rsp
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\Microsoft.Managed.Core.targets
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.AppContext.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.Collections.Immutable.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.Console.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.IO.Compression.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.IO.FileSystem.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.IO.Pipes.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.Reflection.Metadata.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.Security.AccessControl.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.Security.Claims.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.Security.Principal.Windows.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.ValueTuple.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.Xml.XmlDocument.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.Xml.XPath.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\vbc.exe
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\vbc.exe.config
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\vbc.rsp
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\VBCSCompiler.exe
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\roslyn\VBCSCompiler.exe.config
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\EntityFramework.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\EntityFramework.SqlServer.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\Microsoft.Web.Infrastructure.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\Newtonsoft.Json.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\System.Web.Helpers.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\System.Web.Mvc.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\System.Web.Razor.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\System.Web.Webpages.Deployment.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\System.Web.Webpages.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\System.Web.Webpages.Razor.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\EntityFramework.xml
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\EntityFramework.SqlServer.xml
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\Newtonsoft.Json.xml
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\System.Web.Razor.xml
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\System.Web.Webpages.xml
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\System.Web.Webpages.Deployment.xml
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\System.Web.Webpages.Razor.xml
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\System.Web.Helpers.xml
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\System.Web.Mvc.xml
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\obj\Debug\Course_Management.Migrations.Data.InitialCreate.resources
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\obj\Debug\Course_Management.Migrations.Data.InitialCreate1.resources
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\obj\Debug\Course_Management.Migrations.Data.InitialCreate2.resources
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\obj\Debug\Course_Management.Migrations.Data.InitialCreate3.resources
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\obj\Debug\Course_Management.Migrations.Security.AuthDbScript.resources
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\obj\Debug\Course_Management.csproj.GenerateResource.cache
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\obj\Debug\Course_Management.csproj.CopyComplete
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\obj\Debug\Course_Management.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\obj\Debug\Course_Management.pdb
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\obj\Debug\Course_Management.csprojAssemblyReference.cache
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\CrystalDecisions.CrystalReports.Engine.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\CrystalDecisions.ReportSource.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\CrystalDecisions.Shared.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\bin\stdole.dll
+E:\DotNET\PROJECTS\MVC\M08_Project_MVC\Course_Management\obj\Debug\Course_Management.Migrations.Data.InitialCreate4.resources

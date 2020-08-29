@@ -1,0 +1,67 @@
+﻿@model Course_Management.Models.Batch
+@{
+    ViewBag.Title = "Details";
+    int sl = 1;
+}
+
+<div class="row">
+    <h5 class="center">Batch Details</h5>
+</div>
+<div class="row">
+    <h4 class="center">@Model.BatchName</h4>
+    <div class="row">
+    <div class="col s4 z-depth-2 hoverable">
+        <p><span class="grey-text">Course</span> <br />@Model.Course.CourseTitle</p>
+        </div>
+    <div class="col s3 offset-s1 z-depth-2 hoverable">
+        <p>
+            <span class="grey-text">Trainer</span> <br />
+            @Model.Trainer.Name
+        </p>
+    </div>
+    <div class="col s3 offset-s1 z-depth-2 hoverable">
+        <p>
+            <span class="grey-text">Start Date</span> <br />
+            @Model.StartDate.ToString("MMM dd, yyyy")
+        </p>
+    </div>
+    </div>
+    <p class="center flow-text">Enrolled Students</p>
+</div>
+<div class="row">
+    <table>
+        <thead>
+            <tr>
+                <th>SL</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Image</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Enrollments.Select(x=>x.Trainee))
+            {
+                string url = Url.Content("~/"+item.PhotoPath);
+                <tr>
+                    <td>@sl</td>
+                    <td>@item.Name</td>
+                    <td>@item.Phone</td>
+                    <td>
+                        <img src="@url" width="100"/>
+                    </td>
+                </tr>
+                sl++;
+            }
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Total</td>
+                <td>@Model.Enrollments.Count()</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="row">
+        <a class="btn right" href="@Url.Action("ExportReport","Batch",routeValues:new {bId=@Model.BatchId })">Download Report</a>
+    </div>
+</div>
+

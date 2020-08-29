@@ -1,0 +1,56 @@
+﻿
+    <ul id="dropdownadmin" class="dropdown-content">
+        <li>@Html.ActionLink("Create Role", "CreateRole", "Manage")</li>
+        <li>@Html.ActionLink("Assign Role", "AssignRole", "Manage")</li>
+        <li class="divider"></li>
+        <li>@Html.ActionLink("Activate User", "ActiveAccount", "Account")</li>
+        <li>@Html.ActionLink("Deactivate User", "DeactiveAccount", "Account")</li>
+        <li class="divider"></li>
+        <li><a href="#!" data-target="dropdowncordina">Others Links</a></li>
+    </ul>
+<ul id="dropdowncordina" class="dropdown-content">
+    <li>@Html.ActionLink("Create Course", "Create", "Course")</li>
+    <li>@Html.ActionLink("Create Categories", "Create", "Categories")</li>
+    <li class="divider"></li>
+    <li>@Html.ActionLink("Create Trainer", "Create", "Trainer")</li>
+    <li>@Html.ActionLink("Create Skills", "Create", "Skills")</li>
+    <li class="divider"></li>
+    <li>@Html.ActionLink("Create Batch", "Create", "Batch")</li>
+    <li class="divider"></li>
+    <li>@Html.ActionLink("Activate User", "ActiveAccount", "Account")</li>
+</ul>
+<nav class="teal  lighten-1">
+    <div class="nav-wrapper container">
+        <a class="brand-logo" href="@Url.Action("Index","Home")">IsDB-BISEW</a>
+        <ul class="right">
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>@Html.ActionLink("Courses", "Index", "Course")</li>
+            <li>@Html.ActionLink("Trainers", "Index", "Trainer")</li>
+            <li>@Html.ActionLink("Batches", "Index", "Batch")</li>
+            @if (User.IsInRole("User") && !User.IsInRole("Admin") && !User.IsInRole("Co-Ordinator"))
+            {
+                <li>@Html.ActionLink("Enrolled Batch", "EnBatch", "Batch")</li>
+            }
+            @if (User.IsInRole("Co-Ordinator") && !User.IsInRole("Admin"))
+            {
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdowncordina">Co-Ordinator Links<i class="material-icons right">arrow_drop_down</i></a></li>
+            }
+            <!-- Dropdown Trigger -->
+            @if (User.IsInRole("Admin"))
+            {
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdownadmin">Admin Links<i class="material-icons right">arrow_drop_down</i></a></li>
+
+            }
+            @if (User.Identity.IsAuthenticated)
+            {
+                <li>Welcome @User.Identity.Name </li>
+                <li>@Html.ActionLink("Logout", "Logout", "Account")</li>
+            }
+            else
+            {
+                <li>@Html.ActionLink("Register", "Registration", "Account")</li>
+                <li>@Html.ActionLink("Login", "Login", "Account")</li>
+            }
+        </ul>
+    </div>
+</nav>

@@ -1,0 +1,90 @@
+﻿@model Course_Management.ViewModels.CourseViewModel
+@{
+    ViewBag.Title = "Create";
+}
+<div class="row">
+
+</div>
+@using (Html.BeginForm("Create", "Course", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+<div class="row z-depth-2">
+    <h4 class="center">Add New Course</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="row">
+        <div class="input-field col s12">
+            @Html.EditorFor(model => model.CourseTitle)
+            @Html.ValidationMessageFor(model => model.CourseTitle, "", new { @class = "red-text" })
+            @Html.LabelFor(model => model.CourseTitle)
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s3">
+            @Html.EditorFor(model => model.Duration)
+            @Html.ValidationMessageFor(model => model.Duration, "", new { @class = "red-text" })
+            @Html.LabelFor(model => model.Duration)
+        </div>
+        <div class="input-field col s3">
+            @Html.EditorFor(model => model.Assesments)
+            @Html.ValidationMessageFor(model => model.Assesments, "", new { @class = "red-text" })
+            @Html.LabelFor(model => model.Assesments)
+        </div>
+        <div class="input-field col s3">
+            @Html.EditorFor(model => model.Quizes)
+            @Html.ValidationMessageFor(model => model.Quizes, "", new { @class = "red-text" })
+            @Html.LabelFor(model => model.Quizes)
+        </div>
+        <div class="input-field col s3">
+            @Html.EditorFor(model => model.Cost)
+            @Html.LabelFor(model => model.Cost)
+            @Html.ValidationMessageFor(model => model.Cost, "", new { @class = "red-text" })
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s12">
+            @Html.EditorFor(model => model.Overview)
+            @Html.ValidationMessageFor(model => model.Overview, "", new { @class = "red-text" })
+            @Html.LabelFor(model => model.Overview)
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s5">
+            @Html.DropDownListFor(model => model.CategoryId, ViewBag.categories as SelectList,"Select Category")
+            @Html.LabelFor(model => model.CategoryId)
+            @Html.ValidationMessageFor(model => model.CategoryId, "", new { @class = "red-text" })
+        </div>
+        <div class="input-field col s7">
+            <div class="file-field input-field">
+                <div class="btn">
+                    <span>Browse</span>
+                    @Html.TextBoxFor(model => model.Photo, new { type = "file" })
+                </div>
+
+                <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text" placeholder="Choose a image to upload" />
+                </div>
+            </div>
+            @Html.ValidationMessageFor(model => model.Photo, "", new { @class = "red-text" })
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="input-field col s12">
+            @Html.ActionLink("Back to list", "Index", "Skills",new { area=""}, new { @class = "waves-effect waves-light btn teal lighten-1" })
+            <input type="submit" value="Create" class=" btn right" />
+        </div>
+    </div>
+</div>
+}
+
+
+@section Scripts{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.datepicker').datepicker();
+            $('select').formSelect();
+    })
+    </script>
+}

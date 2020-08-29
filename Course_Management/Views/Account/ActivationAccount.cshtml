@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "ActivationAccount";
+}
+
+<div class="row">
+
+</div>
+@if (ViewBag.Status != null && Convert.ToBoolean(ViewBag.Status))
+{
+    <div class="row">
+        <div class="offset-s3 col s6 z-depth-3">
+            <p class="center">Account Activated Successfully!</p>
+            <p class="center"><a href="/Account/Login">Return to Login Page</a></p>
+        </div>
+    </div>
+
+}
+else
+{
+    <div class="row">
+        <div class="offset-s3 col s6 z-depth-3">
+            <p class="center"><strong>Error! </strong>@ViewBag.Message</p>
+        </div>
+    </div>
+    
+}
+

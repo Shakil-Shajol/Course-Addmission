@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Course_Management.IdentityModels.User>
+@{
+    ViewBag.Title = "ActiveAccount";
+}
+
+<div class="row"></div>
+<div class="row">
+    <div class="col s10 offset-s1 z-depth-2">
+        <h4 class="center">Deactivated Accounts</h4>
+        <hr />
+        @if (Model.Count()>0)
+        {
+            <table>
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Select to Active</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Username</td>
+                            <td>@item.FirstName @item.LastName </td>
+                            <td>@item.Email</td>
+                            <td>
+                                @using (Html.BeginForm("ActiveAccount", "Account", FormMethod.Post, new { }))
+                                {
+                                    <input name="username" id="username" value="@item.Username" type="hidden" />
+                                    <input type="submit" value="Activate" class="btn" />
+                                }
+                                @*<a href="@Url.Action("ActiveAccount",new { username=item.Username})" class="btn waves-effect">Activate</a>*@
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+                @*<tfoot>
+                    <tr>
+                        <td colspan="3" class=""></td>
+                        <td class="right"><a href="#!" class="btn">Activate Selected</a></td>
+                    </tr>
+                </tfoot>*@
+            </table>
+
+        }
+
+        else
+        {
+            <p class="center">No Deactivated Account!</p>
+        }
+    </div>
+</div>

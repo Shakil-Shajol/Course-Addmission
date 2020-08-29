@@ -1,0 +1,35 @@
+﻿html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+
+.card-image:hover .myImage{
+    opacity: 0.3;
+}
+
+.card-image:hover .middle {
+    opacity: 1;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.myImage {
+    transition: .5s ease;
+}
+
+.my-foot {
+    position: fixed;
+    bottom: 0;
+}

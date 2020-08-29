@@ -1,0 +1,64 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+@section head{
+    <style type="text/css">
+        .parallax-container {
+            height: 300px;
+        }
+    </style>
+}
+
+<div class="carousel carousel-slider">
+    <a class="carousel-item" href="#one!">
+        <img src="~/Images/static/maxresdefault (4).jpg" />
+    </a>
+    <a class="carousel-item" href="#two!">
+        <img src="~/Images/static/maxresdefault.jpg" />
+    </a>
+    <a class="carousel-item" href="#three!">
+        <img src="~/Images/static/maxresdefault (3).jpg" />
+    </a>
+    <a class="carousel-item" href="#four!">
+        <img src="~/Images/static/maxresdefault (2).jpg" />
+    </a>
+    <a class="carousel-item" href="#five!">
+        <img src="~/Images/static/maxresdefault (1).jpg" />
+    </a>
+</div>
+<div class="section white">
+    <div class="row container">
+        <h2 class="header">IsDB-BISEW IT Scholarship Programme</h2>
+        <p class="grey-text text-darken-3 lighten-3" style="text-align: justify;text-justify: inter-word;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+</div>
+<div class="parallax-container">
+    <div class="parallax">
+        <img src="~/Images/static/maxresdefault (5).jpg" />
+    </div>
+</div>
+
+<div class="section white">
+    <div class="row container">
+        <h2 class="header">IsDB-BISEW Business Scholarship Programme</h2>
+        <p class="grey-text text-darken-3 lighten-3" style="text-align: justify;text-justify: inter-word;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+</div>
+
+@section Scripts{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.parallax').parallax();
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true,
+                indicators: true
+            });
+            setInterval(function () {
+                $('.carousel').carousel('next');
+            }, 4000);
+        });
+
+    </script>
+}
+

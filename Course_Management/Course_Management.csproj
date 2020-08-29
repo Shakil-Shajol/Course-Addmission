@@ -1,0 +1,384 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4AECCAA5-DA4F-4678-9757-D5C6206EBF82}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Course_Management</RootNamespace>
+    <AssemblyName>Course_Management</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44314</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="content\materialize\css\materialize.css" />
+    <Content Include="content\materialize\css\materialize.min.css" />
+    <Content Include="content\materialize\css\materialize.min1.0.0.css" />
+    <Content Include="content\materialize\css\materialize1.0.0.css" />
+    <Content Include="content\materialize\font\material-design-icons\LICENSE.txt" />
+    <Content Include="content\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="content\materialize\font\roboto\Roboto-Thin.woff2" />
+    <Content Include="content\materialize\font\roboto\Roboto-Thin.woff" />
+    <Content Include="content\materialize\font\roboto\Roboto-Thin.ttf" />
+    <Content Include="content\materialize\font\roboto\Roboto-Thin.eot" />
+    <Content Include="content\materialize\font\roboto\Roboto-Regular.woff2" />
+    <Content Include="content\materialize\font\roboto\Roboto-Regular.woff" />
+    <Content Include="content\materialize\font\roboto\Roboto-Regular.ttf" />
+    <Content Include="content\materialize\font\roboto\Roboto-Regular.eot" />
+    <Content Include="content\materialize\font\roboto\Roboto-Medium.woff2" />
+    <Content Include="content\materialize\font\roboto\Roboto-Medium.woff" />
+    <Content Include="content\materialize\font\roboto\Roboto-Medium.ttf" />
+    <Content Include="content\materialize\font\roboto\Roboto-Medium.eot" />
+    <Content Include="content\materialize\font\roboto\Roboto-Light.woff2" />
+    <Content Include="content\materialize\font\roboto\Roboto-Light.woff" />
+    <Content Include="content\materialize\font\roboto\Roboto-Light.ttf" />
+    <Content Include="content\materialize\font\roboto\Roboto-Light.eot" />
+    <Content Include="content\materialize\font\roboto\Roboto-Bold.woff2" />
+    <Content Include="content\materialize\font\roboto\Roboto-Bold.woff" />
+    <Content Include="content\materialize\font\roboto\Roboto-Bold.ttf" />
+    <Content Include="content\materialize\font\roboto\Roboto-Bold.eot" />
+    <Content Include="content\materialize\font\material-design-icons\Material-Design-Icons.woff2" />
+    <Content Include="content\materialize\font\material-design-icons\Material-Design-Icons.woff" />
+    <Content Include="content\materialize\font\material-design-icons\Material-Design-Icons.ttf" />
+    <Content Include="content\materialize\font\material-design-icons\Material-Design-Icons.svg" />
+    <Content Include="content\materialize\font\material-design-icons\Material-Design-Icons.eot" />
+    <Content Include="content\materialize\fonts\roboto\Roboto-Thin.woff2" />
+    <Content Include="content\materialize\fonts\roboto\Roboto-Thin.woff" />
+    <Content Include="content\materialize\fonts\roboto\Roboto-Thin.ttf" />
+    <Content Include="content\materialize\fonts\roboto\Roboto-Thin.eot" />
+    <Content Include="content\materialize\fonts\roboto\Roboto-Regular.woff2" />
+    <Content Include="content\materialize\fonts\roboto\Roboto-Regular.woff" />
+    <Content Include="content\materialize\fonts\roboto\Roboto-Regular.ttf" />
+    <Content Include="content\materialize\fonts\roboto\Roboto-Regular.eot" />
+    <Content Include="content\materialize\fonts\roboto\Roboto-Medium.woff2" />
+    <Content Include="content\materialize\fonts\roboto\Roboto-Medium.woff" />
+    <Content Include="content\materialize\fonts\roboto\Roboto-Medium.ttf" />
+    <Content Include="content\materialize\fonts\roboto\Roboto-Medium.eot" />
+    <Content Include="content\materialize\fonts\roboto\Roboto-Light.woff2" />
+    <Content Include="content\materialize\fonts\roboto\Roboto-Light.woff" />
+    <Content Include="content\materialize\fonts\roboto\Roboto-Light.ttf" />
+    <Content Include="content\materialize\fonts\roboto\Roboto-Light.eot" />
+    <Content Include="content\materialize\fonts\roboto\Roboto-Bold.woff2" />
+    <Content Include="content\materialize\fonts\roboto\Roboto-Bold.woff" />
+    <Content Include="content\materialize\fonts\roboto\Roboto-Bold.ttf" />
+    <Content Include="content\materialize\fonts\roboto\Roboto-Bold.eot" />
+    <Content Include="content\materialize\font\material-design-icons\flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="Scripts\jquery-3.5.1.intellisense.js" />
+    <Content Include="Images\CourseImages\online-training-620x350.jpeg" />
+    <Content Include="Images\static\idb-bisew.png" />
+    <Content Include="Images\static\maxresdefault %281%29.jpg" />
+    <Content Include="Images\static\maxresdefault %282%29.jpg" />
+    <Content Include="Images\static\maxresdefault %283%29.jpg" />
+    <Content Include="Images\static\maxresdefault %284%29.jpg" />
+    <Content Include="Images\static\maxresdefault %285%29.jpg" />
+    <Content Include="Images\static\maxresdefault %286%29.jpg" />
+    <Content Include="Images\static\maxresdefault.jpg" />
+    <Content Include="Scripts\jquery-3.5.1.js" />
+    <Content Include="Scripts\jquery-3.5.1.min.js" />
+    <Content Include="Scripts\jquery-3.5.1.slim.js" />
+    <Content Include="Scripts\jquery-3.5.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\materialize\materialize.js" />
+    <Content Include="Scripts\materialize\materialize.min.1.0.0.js" />
+    <Content Include="Scripts\materialize\materialize.min.js" />
+    <Content Include="Scripts\materialize\materialize1.0.0.js" />
+    <Content Include="Scripts\Site.js" />
+    <Content Include="Web.config" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Course\Index.cshtml" />
+    <Content Include="Views\Course\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Authentication\CustomAuthorizeAttribute.cs" />
+    <Compile Include="Authentication\CustomMembership.cs" />
+    <Compile Include="Authentication\CustomMembershipUser.cs" />
+    <Compile Include="Authentication\CustomPrincipal.cs" />
+    <Compile Include="Authentication\CustomRole.cs" />
+    <Compile Include="Authentication\CustomSerializeModel.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BatchController.cs" />
+    <Compile Include="Controllers\CategoriesController.cs" />
+    <Compile Include="Controllers\CourseController.cs" />
+    <Compile Include="Controllers\EnrollController.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\SkillsController.cs" />
+    <Compile Include="Controllers\TestController.cs" />
+    <Compile Include="Controllers\TraineeController.cs" />
+    <Compile Include="Controllers\TrainerController.cs" />
+    <Compile Include="DataAccessLayer\TrainingDB.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="IdentityModels\AuthenticationDb.cs" />
+    <Compile Include="IdentityModels\Role.cs" />
+    <Compile Include="IdentityModels\User.cs" />
+    <Compile Include="Migrations\Data\202008062353413_InitialCreate.cs" />
+    <Compile Include="Migrations\Data\202008062353413_InitialCreate.designer.cs">
+      <DependentUpon>202008062353413_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Data\202008070223520_InitialCreate1.cs" />
+    <Compile Include="Migrations\Data\202008070223520_InitialCreate1.designer.cs">
+      <DependentUpon>202008070223520_InitialCreate1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Data\202008072120228_InitialCreate2.cs" />
+    <Compile Include="Migrations\Data\202008072120228_InitialCreate2.designer.cs">
+      <DependentUpon>202008072120228_InitialCreate2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Data\202008120747517_InitialCreate3.cs" />
+    <Compile Include="Migrations\Data\202008120747517_InitialCreate3.designer.cs">
+      <DependentUpon>202008120747517_InitialCreate3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Data\202008151504060_InitialCreate4.cs" />
+    <Compile Include="Migrations\Data\202008151504060_InitialCreate4.designer.cs">
+      <DependentUpon>202008151504060_InitialCreate4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Data\Configuration.cs" />
+    <Compile Include="Migrations\Security\202008111810277_AuthDbScript.cs" />
+    <Compile Include="Migrations\Security\202008111810277_AuthDbScript.designer.cs">
+      <DependentUpon>202008111810277_AuthDbScript.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Security\Configuration.cs" />
+    <Compile Include="Models\Batch.cs" />
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\Course.cs" />
+    <Compile Include="Models\Enrollment.cs" />
+    <Compile Include="Models\Person.cs" />
+    <Compile Include="Models\Skills.cs" />
+    <Compile Include="Models\Staff.cs" />
+    <Compile Include="Models\Trainee.cs" />
+    <Compile Include="Models\Trainer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\CrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ViewModels\ActivtionViewModel.cs" />
+    <Compile Include="ViewModels\BatchReportViewModel.cs" />
+    <Compile Include="ViewModels\CourseViewModel.cs" />
+    <Compile Include="ViewModels\LoginVM.cs" />
+    <Compile Include="ViewModels\PersonViewModel.cs" />
+    <Compile Include="ViewModels\RegistrationVM.cs" />
+    <Compile Include="ViewModels\TraineeViewModel.cs" />
+    <Compile Include="ViewModels\TrainerViewModel.cs" />
+    <Compile Include="ViewModels\UserRolesVM.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <None Include="packages.config" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Navbar.cshtml" />
+    <Content Include="Scripts\jquery-3.5.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.5.1.min.map" />
+    <Content Include="Views\Batch\Create.cshtml" />
+    <Content Include="Views\Trainer\Create.cshtml" />
+    <Content Include="Views\Skills\Create.cshtml" />
+    <Content Include="Views\Skills\Edit.cshtml" />
+    <Content Include="Views\Skills\Index.cshtml" />
+    <Content Include="Views\Categories\Index.cshtml" />
+    <Content Include="Views\Categories\Create.cshtml" />
+    <Content Include="Views\Categories\Edit.cshtml" />
+    <Content Include="Views\Trainer\Index.cshtml" />
+    <Content Include="Views\Course\Create.cshtml" />
+    <Content Include="Views\Trainee\Create.cshtml" />
+    <Content Include="Views\Trainee\Index.cshtml" />
+    <Content Include="Views\Categories\_CatNav.cshtml" />
+    <Content Include="Views\Trainer\Edit.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Registration.cshtml" />
+    <Content Include="Views\Account\ActivationAccount.cshtml" />
+    <Content Include="Views\Account\Index.cshtml" />
+    <Content Include="Views\Batch\Index.cshtml" />
+    <Content Include="Views\Batch\Details.cshtml" />
+    <Content Include="Views\Manage\CreateRole.cshtml" />
+    <Content Include="Views\Manage\AssignRole.cshtml" />
+    <Content Include="Views\Enroll\AlreadyAssigned.cshtml" />
+    <Content Include="Views\Batch\EnBatch.cshtml" />
+    <Content Include="Views\Account\ActiveAccount.cshtml" />
+    <Content Include="Views\Error\Index.cshtml" />
+    <Content Include="Views\Error\NotFound.cshtml" />
+    <Content Include="Views\Account\ActiveUserAccount.cshtml" />
+    <Content Include="Views\Test\Index.cshtml" />
+    <Content Include="Views\Account\DeactiveAccount.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Images\Trainee\" />
+    <Folder Include="Images\Trainer\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\Data\202008062353413_InitialCreate.resx">
+      <DependentUpon>202008062353413_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\Data\202008070223520_InitialCreate1.resx">
+      <DependentUpon>202008070223520_InitialCreate1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\Data\202008072120228_InitialCreate2.resx">
+      <DependentUpon>202008072120228_InitialCreate2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\Data\202008120747517_InitialCreate3.resx">
+      <DependentUpon>202008120747517_InitialCreate3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\Data\202008151504060_InitialCreate4.resx">
+      <DependentUpon>202008151504060_InitialCreate4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\Security\202008111810277_AuthDbScript.resx">
+      <DependentUpon>202008111810277_AuthDbScript.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49848</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44314/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

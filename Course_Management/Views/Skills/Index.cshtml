@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Course_Management.Models.Skill>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+    <div class="row">
+        <div class="col s8">
+            <h4>Skill List</h4>
+        </div>
+        <div class="col s4">
+            <a class="btn-floating btn-large waves-effect waves-light teal lighten-1 right" href="~/Skills/Create"><i class="material-icons">add</i></a>
+        </div>
+
+    </div>
+<table class="z-depth-2">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SkillTitle)
+            </th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SkillTitle)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.SkillId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.SkillId }, new { onclick = "return confirm('Are you sure about delete the record?')" })
+                </td>
+            </tr>
+        }
+
+    </tbody>
+
+</table>

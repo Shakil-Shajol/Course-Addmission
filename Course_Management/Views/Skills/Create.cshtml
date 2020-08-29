@@ -1,0 +1,34 @@
+﻿@model Course_Management.Models.Skill
+
+@{
+    ViewBag.Title = "Create";
+}
+
+    <div class="row">
+
+    </div>
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="row z-depth-2">
+        <h4 class="center">Add Skill</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="row">
+            <div class="input-field col s12">
+                @Html.EditorFor(model => model.SkillTitle)
+                @Html.ValidationMessageFor(model => model.SkillTitle, "", new { @class = "red-text" })
+                @Html.LabelFor(model => model.SkillTitle)
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field col s12">
+                @Html.ActionLink("Back to list", "Index", "Skills", new { @class = "waves-effect waves-light btn teal lighten-1" })
+                <input type="submit" value="Create" class="waves-effect waves-light btn teal lighten-1 right" />
+            </div>
+        </div>
+    </div>
+}
+

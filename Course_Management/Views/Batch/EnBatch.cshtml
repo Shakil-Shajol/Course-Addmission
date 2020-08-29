@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Course_Management.Models.Batch>
+@{
+    ViewBag.Title = "EnBatch";
+}
+
+<h2>Enrolled Batches</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Batch Name</th>
+            <th>Course</th>
+            <th>Trainer</th>
+            <th>Start Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.BatchName</td>
+                <td>@item.Course.CourseTitle</td>
+                <td>@item.Trainer.Name</td>
+                <td>@item.StartDate</td>
+            </tr>
+        }
+    </tbody>
+</table>
+

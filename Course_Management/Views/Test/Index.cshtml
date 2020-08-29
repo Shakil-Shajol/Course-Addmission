@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="row">
+
+</div>
+@using (Html.BeginForm("ActiveUserAccount", "Account", FormMethod.Post))
+{
+    <input type="text" id="username" name="username" @*value="@ViewBag.username"*@ />
+    <input id="otpCode" name="otpCode" type="text" width="200" placeholder="Enter Activation Code" class="center-align" />
+    <div class="center-align">
+        <input type="submit" value="Activate Account" class="btn" />
+    </div>
+}
+

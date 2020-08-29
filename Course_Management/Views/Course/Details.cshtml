@@ -1,0 +1,141 @@
+﻿@model Course_Management.Models.Course
+@{
+    ViewBag.Title = "Details";
+}
+
+<h4>@Model.CourseTitle</h4>
+<div class="row">
+    <div class="col s4">
+        <p>@Model.Category.CategoryTitle</p>
+    </div>
+    @if (!User.IsInRole("Admin") && !User.IsInRole("Co-Ordinator"))
+    {
+        <div class="right">
+            @if (Model.Cost == 0)
+            {
+                <span class="green-text">Free  </span>
+            }
+            else
+            {
+                <span>Tk.@decimal.Round(Model.Cost, 2, MidpointRounding.AwayFromZero) &nbsp;&nbsp;</span>
+            }
+            <a class="waves-effect waves-light teal lighten-1 btn" id="batch-btn">Take This Course</a>
+        </div>
+    }
+</div>
+
+<div>
+    <nav class="white">
+        <div class="nav-wrapper">
+            <ul>
+                <li id="overview-li" class="active"><a id="overview-ancor" class="grey-text accent-4">OVERVIEW</a></li>
+                <li id="features-li"><a id="features-ancor" class="grey-text accent-4">COURSE FEATURES</a></li>
+                <li id="batch-li"><a id="batch-ancor" class="grey-text accent-4">UPCOMING BATCHES</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="row z-depth-1">
+        <div class="row" id="tab-overview">
+            <div class="col s12">
+                <p style="text-align: justify;text-justify: inter-word;">@Model.Overview</p>
+            </div>
+            
+        </div>
+        <div class="row" id="tab-features">
+            <div class="col s6">
+                <p><strong>Duration :</strong><span class="badge">@Model.Duration</span></p>
+                <hr />
+                <p><strong>Assesments :</strong><span class="badge">@Model.Assesments</span></p>
+                <hr />
+                <p><strong>Quizes :</strong><span class="badge">@Model.Quizes</span></p>
+            </div>
+        </div>
+        <div class="row" id="tab-batches">
+            @if (Model.Batches.Count() > 0)
+            {
+                foreach (var item in Model.Batches)
+                {
+                    int seatleft = item.TraineeLimit - item.Enrollments.Count();
+                    if (seatleft > 0 && DateTime.Now < item.StartDate)
+                    {
+                        <div class="col s6">
+                            <div class="row">
+                                <div class="col s10 offset-s1 z-depth-4">
+                                    <h4 class="center grey">@item.BatchName</h4>
+                                    <p><strong>Trainer :</strong><span class="badge">@item.Trainer.Name</span></p>
+                                    <hr />
+                                    <p><strong>StartDate :</strong><span class="badge">@item.StartDate.ToString("MMM dd, yyyy")</span></p>
+                                    <hr />
+                                    <p><strong>Seat Left:</strong><span class="badge">@seatleft</span></p>
+                                    <hr />
+                                    <p class="right">
+                                        @if (User.IsInRole("Admin") || User.IsInRole("Co-Ordinator"))
+                                        {
+                                            @Html.ActionLink("Details", "Details", "Batch", new { id = item.BatchId }, new { @class = "" })
+                                        }
+                                        else
+                                        {
+                                            @Html.ActionLink("Enroll To This Batch", "Create", "Enroll", new { bId = item.BatchId }, new { @class = "" })
+                                        }
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    }
+                }
+            }
+            else
+            {
+                <div class="col s12">
+                    <h5>No Batches Scheduled Yet.</h5>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+<div class="row">
+    @Html.ActionLink("Back To Courses","Index","Course",new { area=""},new { @class="grey-text lighten-1"})
+</div>
+
+@section Scripts{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#tab-features").hide();
+            $("#tab-batches").hide();
+            $("#tab-overview").show();
+            $("#overview-ancor").click(function () {
+                $("#tab-features").hide(500);
+                $("#tab-batches").hide(500);
+                $("#tab-overview").show(500);
+                $("#overview-li").addClass('active');
+                $("#features-li").removeClass('active');
+                $("#batch-li").removeClass('active');
+            })
+            $("#features-ancor").click(function () {
+                $("#tab-overview").hide(500);
+                $("#tab-batches").hide(500);
+                $("#tab-features").show(500);
+                $("#features-li").addClass('active');
+                $("#overview-li").removeClass('active');
+                $("#batch-li").removeClass('active');
+            })
+            $("#batch-ancor").click(function () {
+                $("#tab-overview").hide(500);
+                $("#tab-features").hide(500);
+                $("#tab-batches").show(500);
+                $("#batch-li").addClass('active');
+                $("#features-li").removeClass('active');
+                $("#overview-li").removeClass('active');
+            })
+            $("#batch-btn").click(function () {
+                $("#tab-overview").hide(500);
+                $("#tab-features").hide(500);
+                $("#tab-batches").show(500);
+                $("#batch-li").addClass('active');
+                $("#features-li").removeClass('active');
+                $("#overview-li").removeClass('active');
+            })
+        })
+    </script>
+}

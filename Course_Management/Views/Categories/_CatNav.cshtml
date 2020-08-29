@@ -1,0 +1,14 @@
+﻿@model  IEnumerable<Course_Management.Models.Category>
+
+
+<div class="collection">
+    <a href="#!" class="collection-header"><h6 class="center teal-text">Categories</h6></a><hr />
+    <a href="@Url.Action("Index","Course")" class="collection-item"><span class="badge">(@ViewBag.CourseCount)</span>All Courses</a>
+    @foreach (var item in Model)
+    {
+        <a class="collection-item" href="@Url.Action("Index","Course",new { id=item.CategoryId,page=1})">
+            <span class="badge">(@item.Courses.Count())</span>
+            @item.CategoryTitle
+        </a>
+    }
+</div>

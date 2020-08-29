@@ -1,0 +1,110 @@
+﻿@model Course_Management.ViewModels.TrainerViewModel
+@{
+    ViewBag.Title = "Edit";
+}
+
+<div class="row">
+
+</div>
+@using (Html.BeginForm("Edit", "Trainer", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="row z-depth-2">
+        <div class="col s10 offset-s1">
+            <h4>Edit Trainer</h4>
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "red-text" })
+            @Html.HiddenFor(model => model.TrainerId)
+            @Html.HiddenFor(mod => mod.PhotoPath)
+            <div class="row">
+                <div class="input-field col s6">
+                    @Html.EditorFor(model => model.Name)
+                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "red-text" })
+                    @Html.LabelFor(model => model.Name)
+                </div>
+                <div class="input-field col s6">
+                    @Html.EditorFor(model => model.FatherName)
+                    @Html.ValidationMessageFor(model => model.FatherName, "", new { @class = "red-text" })
+                    @Html.LabelFor(model => model.FatherName)
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s4">
+                    @Html.DropDownListFor(model => model.SkillIds, ViewBag.skills as MultiSelectList, new { multiple = "multiple" })
+                    @Html.LabelFor(model => model.SkillIds)
+                    @Html.ValidationMessageFor(model => model.SkillIds, "", new { @class = "red-text" })
+                </div>
+                <div class="input-field col s4">
+                    @Html.EnumDropDownListFor(model => model.Gender)
+                    @Html.LabelFor(model => model.Gender)
+                    @Html.ValidationMessageFor(model => model.Gender, "", new { @class = "red-text" })
+                </div>
+                <div class="input-field col s4">
+                    @Html.EditorFor(model => model.BirthDate, new { htmlAttributes = new { @class = "datepicker", type = "text" } })
+                    @Html.ValidationMessageFor(model => model.BirthDate, "", new { @class = "red-text" })
+                    @Html.LabelFor(model => model.BirthDate)
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    @Html.EditorFor(model => model.Email)
+                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "red-text" })
+                    @Html.LabelFor(model => model.Email)
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    @Html.EditorFor(model => model.Phone)
+                    @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "red-text" })
+                    @Html.LabelFor(model => model.Phone)
+                </div>
+                <div class="input-field col s6">
+                    @Html.EditorFor(model => model.NID)
+                    @Html.ValidationMessageFor(model => model.NID, "", new { @class = "red-text" })
+                    @Html.LabelFor(model => model.NID)
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    @Html.EditorFor(model => model.Address)
+                    @Html.ValidationMessageFor(model => model.Address, "", new { @class = "red-text" })
+                    @Html.LabelFor(model => model.Address)
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <div class="file-field input-field">
+                        <div class="btn">
+                            <span>Browse</span>
+                            @Html.TextBoxFor(model => model.Photo, new { type = "file" })
+                        </div>
+
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text" placeholder="Choose a image to upload" />
+                        </div>
+                    </div>
+                    @Html.ValidationMessageFor(model => model.Photo, "", new { @class = "red-text" })
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    @Html.ActionLink("Back to list", "Index", "Trainer", new { @class = "waves-effect waves-light btn teal lighten-1" })
+                    <input type="submit" value="Save Changes" class="btn right" />
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+
+@section Scripts{
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.datepicker').datepicker();
+            $('select').formSelect();
+        })
+    </script>
+}
+

@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title -IsDB-BISEW IT Training</title>
+    <link href="~/content/Site.css" rel="stylesheet" />
+    <link href="~/content/materialize/css/materialize.min1.0.0.css" rel="stylesheet" />
+    @*<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">*@
+    @RenderSection("head", required: false)
+</head>
+<body>
+    <div class="navbar-fixed">
+        @Html.Partial("_Navbar")
+    </div>
+    <div class="container">
+        @RenderBody()
+    </div>
+    <div id="for-r-foot">
+        <footer class="teal lighten-1 page-footer">
+            <div class="container">
+                <img class="right" height="160" src="~/Images/static/idb-bisew.png" />
+                <p><strong><u>Developed By</u></strong></p>
+                <p><strong>Trainee Name : </strong>Md. Shakil Ahmmed Shajol</p>
+                <p><strong>Trainee Id : </strong>1253725</p>
+                <p><strong>Batch : </strong>ESAD-CS/PNTL-A/42/01</p>
+                <p><strong>IsDB-BISEW IT Scholarship Programme</strong></p>
+                <p class="teal-text text-accent-1 footer-copyright">&copy; @DateTime.Now.Year - IsDB-BISEW IT Scholarship Programme <a class="grey-text text-lighten-4 right"><i class="material-icons right">drafts</i></a></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="~/Scripts/jquery-3.5.1.min.js"></script>
+    <script src="~/Scripts/materialize/materialize.min.1.0.0.js"></script>
+    <script src="~/Scripts/Site.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

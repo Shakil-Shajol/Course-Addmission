@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Course_Management.Models.Category>
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="row">
+    <div class="col s8">
+        <h4>Category List</h4>
+    </div>
+    <div class="col s4">
+        <a class="btn-floating btn-large waves-effect waves-light teal lighten-1 right" href="~/Categories/Create"><i class="material-icons">add</i></a>
+    </div>
+
+</div>
+<table class="z-depth-2">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CategoryTitle)
+            </th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CategoryTitle)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.CategoryId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.CategoryId }, new { onclick = "return confirm('Are you sure about delete the record?')" })
+                </td>
+            </tr>
+        }
+
+    </tbody>
+
+</table>
+

@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Course_Management.Models.Batch>
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="row">
+    <div class="col s8">
+        <h4>Batch List</h4>
+    </div>
+    <div class="col s4">
+        @if (User.IsInRole("Co-Ordinator"))
+        {
+            <a class="btn-floating pulse btn-large waves-effect waves-light teal lighten-1 right" href="~/Batch/Create"><i class="material-icons">add</i></a>
+        }
+    </div>
+</div>
+<div class="row">
+    @foreach (var item in Model)
+    {
+        int seatleft = item.TraineeLimit - item.Enrollments.Count();
+        <div class="col s6">
+            <div class="row">
+                <div class="col s12 z-depth-1 hoverable">
+                    <h4 class="center teal">@item.BatchName</h4>
+                    <p><strong>Course :</strong><span class="right">@item.Course.CourseTitle</span></p>
+                    <p><strong>Trainer :</strong><span class="badge">@item.Trainer.Name</span></p>
+                    <p><strong>StartDate :</strong><span class="badge">@item.StartDate.ToString("MMM dd, yyyy")</span></p>
+                    <p><strong>Trainee Limit:</strong><span class="badge">@item.TraineeLimit</span></p>
+                    <p><strong>Seat Left:</strong><span class="badge">@seatleft</span></p>
+                    <p class="right">
+                        @if (User.IsInRole("Admin") || User.IsInRole("Co-Ordinator"))
+                        {
+                            @Html.ActionLink("Details", "Details", "Batch", new { id = item.BatchId }, new { @class = "" })
+                        }
+                        else
+                        {
+                            @Html.ActionLink("Enroll To This Batch", "Create", "Enroll", new { bId = item.BatchId }, new { @class = "" })
+                        }
+                    </p>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+

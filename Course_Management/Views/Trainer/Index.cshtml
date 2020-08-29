@@ -1,0 +1,84 @@
+﻿@model IEnumerable<Course_Management.Models.Trainer>
+@{
+    ViewBag.Title = "Index";
+}
+
+    <div class="row">
+        <div class="col s8">
+            <h4>Trainer List</h4>
+        </div>
+
+        @if (User.IsInRole("Admin") || User.IsInRole("Co-Ordinator"))
+        {
+            <div class="col s4">
+                <a class="btn-floating btn-large waves-effect waves-light teal lighten-1 right" href="~/Trainer/Create"><i class="material-icons">add</i></a>
+            </div>
+
+        }
+
+    </div>
+<table class="z-depth-2">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Phone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Skills)
+            </th>
+            <th>
+                Photo
+            </th>
+            @if (User.IsInRole("Admin") || User.IsInRole("Co-Ordinator"))
+            {
+                <th>Actions</th>
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            List<string> templist = new List<string>();
+            foreach (var skill in item.Skills)
+            {
+                templist.Add(skill.SkillTitle);
+            }
+            string tempString = string.Join(", ", templist);
+
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelitem => tempString)
+            </td>
+            <td>
+                <img src="@Url.Content(item.PhotoPath)" width="50" />
+            </td>
+            @if (User.IsInRole("Admin") || User.IsInRole("Co-Ordinator"))
+            {
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.TrainerId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.TrainerId }, new { onclick = "return confirm('Are you sure about delete the record?')" })
+                </td>
+
+            }
+        </tr>
+        }
+
+    </tbody>
+
+</table>
+

@@ -1,0 +1,64 @@
+﻿@model Course_Management.Models.Batch
+@{
+    ViewBag.Title = "Create";
+}
+
+@using (Html.BeginForm("Create", "Batch", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="row z-depth-1">
+        <h4 class="center">Add New Batch</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "red-text" })
+        <div class="row">
+            <div class="input-field col s12">
+                @Html.EditorFor(model => model.BatchName)
+                @Html.ValidationMessageFor(model => model.BatchName, "", new { @class = "red-text" })
+                @Html.LabelFor(model => model.BatchName)
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s6">
+                @Html.DropDownListFor(model => model.CourseId, ViewBag.courses as SelectList, "Select Course")
+                @Html.LabelFor(model => model.CourseId)
+                @Html.ValidationMessageFor(model => model.CourseId, "", new { @class = "red-text" })
+            </div>
+            <div class="input-field col s6">
+                @Html.DropDownListFor(model => model.TrainerId, ViewBag.trainers as SelectList, "Select Trainer")
+                @Html.LabelFor(model => model.TrainerId)
+                @Html.ValidationMessageFor(model => model.TrainerId, "", new { @class = "red-text" })
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field col s6">
+                @Html.EditorFor(model => model.TraineeLimit)
+                @Html.ValidationMessageFor(model => model.TraineeLimit, "", new { @class = "red-text" })
+                @Html.LabelFor(model => model.TraineeLimit)
+            </div>
+            <div class="input-field col s6">
+                @Html.EditorFor(model => model.StartDate, new { htmlAttributes = new { @class = "datepicker", type = "text" } })
+                @Html.ValidationMessageFor(model => model.StartDate, "", new { @class = "red-text" })
+                @Html.LabelFor(model => model.StartDate)
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field col s12">
+                @Html.ActionLink("Back to list", "Index", "Batch",new { @class="waves-effect waves-light btn teal lighten-1"})
+                <input type="submit" value="Create Batch" class="btn right" />
+            </div>
+        </div>
+    </div>
+
+}
+<div>
+</div>
+@section Scripts{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.datepicker').datepicker();
+            $('select').formSelect();
+    })
+    </script>
+}

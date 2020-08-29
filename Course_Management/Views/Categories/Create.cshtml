@@ -1,0 +1,32 @@
+﻿@model Course_Management.Models.Category
+
+@{
+    ViewBag.Title = "Create";
+}
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="row z-depth-2">
+        <h4 class="center">Add Category</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "red-text" })
+        <div class="row">
+            <div class="input-field col s12">
+                @Html.EditorFor(model => model.CategoryTitle)
+                @Html.ValidationMessageFor(model => model.CategoryTitle, "", new { @class = "red-text" })
+                @Html.LabelFor(model => model.CategoryTitle)
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field col s12">
+                @Html.ActionLink("Back to list", "Index", "Skills", new { @class = "waves-effect waves-light btn teal lighten-1" })
+                <input type="submit" value="Create" class="waves-effect waves-light btn teal lighten-1 right" />
+            </div>
+        </div>
+    </div>
+}
+
