@@ -123,7 +123,8 @@ namespace Course_Management.Controllers
                     db.SaveChanges();
 
                 }
-                VerificationEmail(rvm.Email, vcode.ToString(), activationOtp.ToString());
+                //VerificationEmail(rvm.Email, vcode.ToString(), activationOtp.ToString());
+                /*if you uncomment avobe line then please add a valid gmail address & password to line 148 & 151 respectively*/
                 messageRegistration = "Your account has been created successfully.";
                 regStatus = true;
             }
@@ -144,10 +145,10 @@ namespace Course_Management.Controllers
             var url = string.Format("/Account/ActivationAccount/{0}", activationCode);
             var link = Request.Url.AbsoluteUri.Replace(Request.Url.PathAndQuery, url);
 
-            var fromEmail = new MailAddress("shajolshakilahmmed@gmail.com", "VerifyAccount");
+            var fromEmail = new MailAddress("A gmail address", "VerifyAccount"); // need to replace "A gmail address" to a valid google mail address.
             var toEmail = new MailAddress(email);
 
-            var fromEmailPassword = "Registr@tionverification";
+            var fromEmailPassword = "password"; //Need to replace the "password" to actual password of the mail account
             string subject = "[Account Activation]";
 
             string body = "<br/> Please click on the following link in order to activate your account" + "<br/><a href='" + link + "'> Click to active your account</a><br /> Activation Code : <b>" + activationOtp + "</b>";

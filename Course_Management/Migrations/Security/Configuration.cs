@@ -21,8 +21,8 @@
             context.Roles.Add(new IdentityModels.Role { RoleName = "Admin" });
             context.Roles.Add(new IdentityModels.Role { RoleName = "Co-Ordinator" });
             context.SaveChanges();
-            context.Users.Add(new IdentityModels.User { Username = "Shakil", FirstName = "Shakil", LastName = "Ahmmed", Email = "shakil.bd.ngn@gmail.com", IsActive = true, Password = "Sa123*",ActivationCode= Guid.NewGuid() });
-            context.Users.Add(new IdentityModels.User { Username = "Ahmmed", FirstName = "Shakil", LastName = "Ahmmed", Email = "shakil.bd.ngn@outlook.com", IsActive = true, Password = "Sa123*",ActivationCode= Guid.NewGuid() });
+            context.Users.Add(new IdentityModels.User { Username = "Shakil", FirstName = "Shakil", LastName = "Ahmmed", Email = "admin@mail.com", IsActive = true, Password = "Sa123*",ActivationCode= Guid.NewGuid() });
+            context.Users.Add(new IdentityModels.User { Username = "Ahmmed", FirstName = "Shakil", LastName = "Ahmmed", Email = "co-ordinator@outlook.com", IsActive = true, Password = "Sa123*",ActivationCode= Guid.NewGuid() });
             context.SaveChanges();
             var us = context.Users.Include("Roles").FirstOrDefault(x => x.Username == "Shakil");
             var ro = context.Roles.FirstOrDefault(x => x.RoleName == "Admin");
